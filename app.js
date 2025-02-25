@@ -10,7 +10,6 @@ function agregarAmigo() {
     if (nombreDeAmigo === '') {
         alert('Por favor, inserte un nombre.');
     } else {
-        // amigos.push(console.log(nombreDeAmigo)); 
         amigos.push(nombreDeAmigo); 
         limpiarCaja();
         mostrarListaDeAmigos()
@@ -18,7 +17,7 @@ function agregarAmigo() {
 }
 
 function limpiarCaja() {
-    document.querySelector('#amigo').value = '';
+    document.document.getElementById('amigo').value = '';
 }
 
 // Implementa una función para actualizar la lista de amigos
