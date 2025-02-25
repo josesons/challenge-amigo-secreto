@@ -24,15 +24,26 @@ function limpiarCaja() {
 // Implementa una función para actualizar la lista de amigos
 
 function mostrarListaDeAmigos() {
-    let lista = document.getElementById('listaAmigos');
-    lista.innerHTML = '';
+    let listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = '';
 
     for (let i = 0; i < amigos.length; i++) {
         let element = amigos[i];
     
-        let listaHTML = document.createElement("li");
-        listaHTML.textContent = element;
-        lista.appendChild(listaHTML);
+        let liElementHtml = document.createElement("li");
+        liElementHtml.textContent = element;
+        listaAmigos.appendChild(liElementHtml);
       }
 }
 
+// Implementa una función para sortear los amigos
+
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert('Por favor, inserte al menos dos nombres de sus amigos.');
+    } else {
+        let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+        let resultado = document.getElementById('resultado');
+        resultado.innerHTML = amigos[indiceAleatorio];
+    }
+}
