@@ -16,7 +16,7 @@ El usuario deberá agregar nombres mediante un campo de texto y un botón **"Adi
 - Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
 
 <br>
----
+
 [Visita el sitio web](https://josesons.github.io/challenge-amigo-secreto/)
 ---
 
